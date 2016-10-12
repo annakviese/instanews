@@ -15,6 +15,48 @@ h1 {
          clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
 }
 
+body {
+	background-color: black;
+	font-family: Open Sans Light;
+	height: auto;
+	width: 100%;
+}
+
+p {
+	font-size: 16px;
+	color: #c2c2c2;
+}
+
+.frontpage {
+	margin-top: 30%;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+  	justify-content: center;
+  	margin: 10%;
+  	
+}
+.logo {
+	flex: 1% 0 100%;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.selection {
+	display: flex;
+  	flex-direction: column;
+  	width: 200px;
+  	text-align: center;
+}
+
+.selection p {
+	margin: 3% 0 3% 0;
+}
+
+
+
 
 
 
