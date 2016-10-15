@@ -3,10 +3,9 @@ $(function(){
 //when selection changes show me article
 
 	
-	var articleImg ='';
-$
-('.select').on('change',function(event){
-	$topStories = $('.topStories');
+	
+$('.select').on('change',function(){
+	var $topStories = $('.topStories');
 	$topStories.empty();
 	var article='';
 	var selectSection = $('.select').val();
@@ -18,20 +17,27 @@ $
 
 	.done(function(data) {
 		var n = data.results;
+		var articleImg ='';
+		var articleAbstract = '';
+		var articleUrl = '';
 		
 		$.each (n, function(key, value){
 
 			if(value.multimedia.length > 0) {
-		var articleImg= value.multimedia[4].url;
+			articleImg= value.multimedia[4].url;
+			articleAbstract=value.abstract;
+			articleUrl=value.url;
 		
 		article += '<li>';
-		article += '<img src="'+articleImg+'"/>';
-		article += '</li>';
+		article += '<a href='+articleUrl+'>'
+		article += '<div class="article_background" style="background-image:url('+articleImg+')">';
+		article += '<p class="article_abstract">'+articleAbstract+''
+		article += '</p></div></a></li>'
 		}
 		});
 		$topStories.append(article);
     })
-		console.log('hope?');
+
 	});
-//
+
 }); //closing tag for document ready

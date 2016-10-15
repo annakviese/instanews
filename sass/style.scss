@@ -49,3 +49,16 @@ p {
 .selection p {
 	margin: 3% 0 3% 0;
 }
+
+.topStories {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	li{
+		width: 100%;
+	}
+}
+.article_background{
+	height: 400px;
+}
+

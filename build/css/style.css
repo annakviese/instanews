@@ -94,3 +94,15 @@ p {
 
 .selection p {
   margin: 3% 0 3% 0; }
+
+.topStories {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+  .topStories li {
+    width: 100%; }
+
+.article_background {
+  height: 400px; }
