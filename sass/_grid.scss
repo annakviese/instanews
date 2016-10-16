@@ -5,10 +5,12 @@
 	flex-direction: row;
 	width: 100%;
 	align-items: flex-start;
+	
 
 	li{
 		max-width: 100%;
 		flex: 1 1 100%;
+		position: relative;
 
 		@include tablet {
 		max-width: 50%;
@@ -27,4 +29,9 @@
 	width: 100%;
 	background-size: cover;        
     background-position: 50%;                      
+}
+
+.article_abstract {
+	 position: absolute;
+  	bottom: 0;
 }

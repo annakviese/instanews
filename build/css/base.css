@@ -73,7 +73,7 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-.header {
+header {
   width: 100%;
   height: auto;
   display: -ms-flexbox;
@@ -87,46 +87,55 @@ table {
   -ms-flex-direction: column;
       flex-direction: column; }
   @media (min-width: 600px) {
-    .header {
+    header {
       -ms-flex-pack: start;
           justify-content: flex-start;
       -ms-flex-direction: row;
           flex-direction: row;
-      height: 60%;
       width: auto;
       -ms-flex-align: start;
           align-items: flex-start; } }
-  @media (min-width: 1000px) {
-    .header {
-      height: 20%; } }
 
 .logo {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
+  max-width: 100%;
+  -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
   margin-top: 10%; }
   .logo img {
     width: 100%;
     height: auto; }
   @media (min-width: 600px) {
     .logo {
-      margin-top: 1%; }
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+      margin-top: 1%;
+      max-width: 25%; }
       .logo img {
-        width: 50%; } }
+        width: 40%; } }
 
 .choose-section {
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 100%;
+  -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
-      align-items: center;
-  margin-bottom: 30%; }
+      align-items: center; }
+  @media (min-width: 600px) {
+    .choose-section {
+      max-width: auto;
+      -ms-flex: 2 2 auto;
+          flex: 2 2 auto; } }
   .choose-section p {
     text-align: center;
     width: 150px;
-    padding: 3%; }
+    padding: 3% 0; }
+    @media (min-width: 600px) {
+      .choose-section p {
+        text-align: left; } }
   .choose-section .select {
     width: 150px; }
 
@@ -143,7 +152,8 @@ table {
   .topStories li {
     max-width: 100%;
     -ms-flex: 1 1 100%;
-        flex: 1 1 100%; }
+        flex: 1 1 100%;
+    position: relative; }
     @media (min-width: 600px) {
       .topStories li {
         max-width: 50%;
@@ -161,10 +171,17 @@ table {
   background-size: cover;
   background-position: 50%; }
 
+.article_abstract {
+  position: absolute;
+  bottom: 0; }
+
 footer {
   height: 100px;
   width: 100%;
   text-align: center; }
+  @media (min-width: 600px) {
+    footer {
+      text-align: left; } }
   footer p {
     padding: 3%; }
     footer p span {

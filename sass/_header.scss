@@ -1,4 +1,4 @@
-.header {
+header {
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -11,19 +11,19 @@
   	@include tablet {
   		justify-content: flex-start;
   		flex-direction: row;
-  		height: 60%;
   		width: auto;
   		align-items: flex-start;
   	}
 
   	@include desktop {
-  		height: 20%;
+  		
   	}
 }
 
 .logo {
-	display: flex;
 	align-self: center;
+	max-width: 100%;
+	flex: 1 1 100%;
 	margin-top: 10%;
 
 	img {
@@ -32,9 +32,11 @@
 	}
 
 		@include tablet {
+			flex: 1 1 25%;
 			margin-top: 1%;
+			max-width: 25%;
 			img {
-				width: 50%;
+				width: 40%;
 			}
 		}
 
@@ -42,18 +44,27 @@
 }
 
 .choose-section {
-	display: flex;
+	max-width: 100%;
+	flex: 1 1 100%;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 30%;
+
+	@include tablet {
+			max-width: auto;
+			flex: 2 2 auto;
+		}
 
 	p {
 		text-align: center;
 		width: 150px;
-		padding: 3%;
+		padding: 3% 0;
+		@include tablet {
+			text-align: left;
+		}
 	}
 
 	.select{
 		width: 150px;
 	}
+	
 }
