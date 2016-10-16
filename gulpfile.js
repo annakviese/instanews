@@ -31,7 +31,7 @@ gulp.task('js', function(){
 // SASS
 
 gulp.task('sass', function() {
-   gulp.src('./sass/style.scss')
+   gulp.src('./sass/base.scss')
       .pipe(plumber(plumberErrorHandler))
       .pipe(sass())
       .pipe(autoprefixer({

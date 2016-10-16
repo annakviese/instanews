@@ -16,12 +16,12 @@ $('.select').on('change',function(){
 		})  
 
 	.done(function(data) {
-		var n = data.results;
+		var results = data.results.slice(0,12);
 		var articleImg ='';
 		var articleAbstract = '';
 		var articleUrl = '';
 		
-		$.each (n, function(key, value){
+		$.each (results, function(key, value){
 
 			if(value.multimedia.length > 0) {
 			articleImg= value.multimedia[4].url;

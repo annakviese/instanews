@@ -9,11 +9,12 @@
 <body>
 	<h1> instanews </h1>
 
-	<section class = "frontpage">
+	<header>
 		<div class="logo"> 
 			<img src="images/nyt-logo.svg">
 		</div>
-
+		<div class="choose-section">
+			<p>Choose a section:</p>
 			<select class='select'>
 				<option value="section">Section</option>
 		  		<option value="sports">Sports</option>
@@ -23,9 +24,14 @@
 		  		<option value="travel">Travel</option>
 		  		<option value="food">Food</option>
 			</select>
-	</div>
+		</div>
+	</header>
 
 	<ul class='topStories'></ul>
+
+	<footer>
+		<p>&copy Copyright 2015 <span> instanews </span></p>
+	</footer>	
 	
 	<script src="lib/jquery-3.1.1.min.js"></script>	
 	<script src="js/javascript.js"></script>	

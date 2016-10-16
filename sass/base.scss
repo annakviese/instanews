@@ -1,0 +1,33 @@
+@import 'reset';
+@import 'mixins';
+@import 'fonts';
+@import 'header';
+@import 'grid';
+@import 'footer';
+
+
+
+h1 {
+ position: absolute !important;
+ height: 1px; width: 1px; 
+ overflow: hidden;
+ clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+ clip: rect(1px, 1px, 1px, 1px);
+ -webkit-clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+         clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+}
+
+body {
+	background-color: black;
+	font-family: Open Sans Light;
+	height: 100%;
+	width: 100%;
+
+}
+
+p {
+	font-size: 16px;
+	color: #c2c2c2;
+}
+
+

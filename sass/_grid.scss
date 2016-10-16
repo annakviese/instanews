@@ -1,0 +1,30 @@
+
+.topStories {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	align-items: flex-start;
+
+	li{
+		max-width: 100%;
+		flex: 1 1 100%;
+
+		@include tablet {
+		max-width: 50%;
+		flex: 1 1 50%;	
+		}
+
+		@include desktop {
+		max-width: 25%;
+		flex: 1 1 25%;
+		}
+	}
+}
+
+.article_background{
+	height: 400px;
+	width: 100%;
+	background-size: cover;        
+    background-position: 50%;                      
+}

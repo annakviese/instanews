@@ -1,0 +1,59 @@
+.header {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+
+
+  	@include tablet {
+  		justify-content: flex-start;
+  		flex-direction: row;
+  		height: 60%;
+  		width: auto;
+  		align-items: flex-start;
+  	}
+
+  	@include desktop {
+  		height: 20%;
+  	}
+}
+
+.logo {
+	display: flex;
+	align-self: center;
+	margin-top: 10%;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+		@include tablet {
+			margin-top: 1%;
+			img {
+				width: 50%;
+			}
+		}
+
+	
+}
+
+.choose-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30%;
+
+	p {
+		text-align: center;
+		width: 150px;
+		padding: 3%;
+	}
+
+	.select{
+		width: 150px;
+	}
+}
