@@ -1,10 +1,20 @@
+#loading {
+	width: 100%;
+	display: flex;
+  	justify-content: center;
+
+	 img {
+		width: 100px;
+		height: 100px;
+	}
+}
 
 .topStories {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	width: 100%;
-	align-items: flex-start;
+	align-items: center;
 	
 
 	li{
@@ -24,6 +34,8 @@
 	}
 }
 
+
+
 .article_background{
 	height: 400px;
 	width: 100%;
@@ -32,6 +44,11 @@
 }
 
 .article_abstract {
-	 position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	line-height: 1.5;
+	color: white;
+	position: absolute;
   	bottom: 0;
 }
+

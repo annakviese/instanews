@@ -5,7 +5,10 @@
 @import 'grid';
 @import 'footer';
 
-
+* {
+    box-sizing: border-box;
+    outline: none;
+}
 
 h1 {
  position: absolute !important;
@@ -19,15 +22,17 @@ h1 {
 
 body {
 	background-color: black;
-	font-family: Open Sans Light;
+	font-family: "open_sans", Serif;
+	font-weight: normal;
+    font-style: normal;
 	height: 100%;
 	width: 100%;
-
-}
-
-p {
 	font-size: 16px;
-	color: #c2c2c2;
+	color: white;
+
 }
+
+
+
 
 

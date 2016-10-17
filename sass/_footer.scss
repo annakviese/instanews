@@ -3,10 +3,14 @@ footer {
 	width: 100%;
   	text-align: center;
   	@include tablet {
+  		
+  	}
+  	@include tablet {
   		text-align: left;
   	}
 
 	p {
+		color: #c2c2c2;
 		padding: 3%;
 		span {
 			text-transform: uppercase;

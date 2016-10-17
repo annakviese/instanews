@@ -2,9 +2,11 @@ $(function(){
 
 //when selection changes show me article
 
-	
+	$('#loading').hide();
 	
 $('.select').on('change',function(){
+	$('#loading').show();
+	$('header').addClass('header-shrink');
 	var $topStories = $('.topStories');
 	$topStories.empty();
 	var article='';
@@ -16,14 +18,19 @@ $('.select').on('change',function(){
 		})  
 
 	.done(function(data) {
-		var results = data.results.slice(0,12);
+
+		var results = data.results.filter(function(value){ //filter the results for value
+			return value.multimedia.length >= 5; //we put 5 because in our each function it's 4, which 5th item in the array
+		});
+		results.splice(12); //we don't put equal because we want to update the current results variable 
+
 		var articleImg ='';
 		var articleAbstract = '';
-		var articleUrl = '';
+		var articleUrl = '';	
 		
 		$.each (results, function(key, value){
 
-			if(value.multimedia.length > 0) {
+			// if(value.multimedia.length > 0) {
 			articleImg= value.multimedia[4].url;
 			articleAbstract=value.abstract;
 			articleUrl=value.url;
@@ -33,11 +40,16 @@ $('.select').on('change',function(){
 		article += '<div class="article_background" style="background-image:url('+articleImg+')">';
 		article += '<p class="article_abstract">'+articleAbstract+''
 		article += '</p></div></a></li>'
-		}
+		// }
 		});
 		$topStories.append(article);
-    })
 
+    })
+		.always(function(){
+          $('#loading').hide();
+    });
+
+	
 	});
 
 }); //closing tag for document ready
