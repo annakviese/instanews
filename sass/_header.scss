@@ -20,6 +20,25 @@ header {
   	}
 }
 
+.header-shrink {
+	height: auto;
+	.logo {
+		width: 100px;
+    	height: 100px;
+	}
+	
+	@include tablet {
+		
+		height: 150px;
+		justify-content: flex-start;
+		
+	}
+	@include desktop {
+		max-width: 50%;
+    	height: 135px;
+	}
+}
+
 .logo {
 	display: flex;
 	width: 100%;
@@ -78,17 +97,3 @@ header {
 	}	
 }
 
-.header-shrink {
-	height: auto;
-	
-	@include tablet {
-		
-		height: 150px;
-		justify-content: flex-start;
-		
-	}
-	@include desktop {
-		max-width: 50%;
-    	height: 135px;
-	}
-}

@@ -98,6 +98,21 @@ header {
           justify-content: flex-start;
       margin: 0 0; } }
 
+.header-shrink {
+  height: auto; }
+  .header-shrink .logo {
+    width: 100px;
+    height: 100px; }
+  @media (min-width: 600px) {
+    .header-shrink {
+      height: 150px;
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
+  @media (min-width: 1000px) {
+    .header-shrink {
+      max-width: 50%;
+      height: 135px; } }
+
 .logo {
   display: -ms-flexbox;
   display: flex;
@@ -158,18 +173,6 @@ header {
         text-align: left; } }
   .choose-section .select {
     width: 150px; }
-
-.header-shrink {
-  height: auto; }
-  @media (min-width: 600px) {
-    .header-shrink {
-      height: 150px;
-      -ms-flex-pack: start;
-          justify-content: flex-start; } }
-  @media (min-width: 1000px) {
-    .header-shrink {
-      max-width: 50%;
-      height: 135px; } }
 
 #loading {
   width: 100%;
