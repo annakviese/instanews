@@ -1,6 +1,6 @@
 
 ## Instanews 
-![Alt text](https://github.com/annakviese/instanews/blob/master/documentation/images/Screen%20Shot%202016-10-17%20at%209.38.30%20PM.png?raw=true)
+![Alt text](https://github.com/annakviese/instanews/blob/master/documentation/images/Screen%20Shot%202016-10-17%20at%209.45.40%20PM.png?raw=true)
 
 #### About
 This is Instanews. 
