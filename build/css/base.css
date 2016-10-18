@@ -192,6 +192,9 @@ header {
         max-width: 25%;
         -ms-flex: 1 1 25%;
             flex: 1 1 25%; } }
+    .topStories li :hover .article_abstract {
+      height: 120px;
+      opacity: 1; }
 
 .article_background {
   height: 400px;
@@ -200,18 +203,22 @@ header {
   background-position: 50%; }
 
 .article_abstract {
+  height: 0;
+  opacity: 0;
+  padding: 10px 20px;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   line-height: 1.5;
   color: white;
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  transition: all 0.6s ease; }
 
 footer {
   height: 100px;
   width: 100%;
   text-align: center; }
-  @media (min-width: 600px) {
+  @media (min-width: 1000px) {
     footer {
       text-align: left; } }
   footer p {

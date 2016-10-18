@@ -2,10 +2,8 @@ footer {
 	height: 100px;
 	width: 100%;
   	text-align: center;
-  	@include tablet {
-  		
-  	}
-  	@include tablet {
+
+  	@include desktop {
   		text-align: left;
   	}
 

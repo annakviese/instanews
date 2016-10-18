@@ -4,7 +4,7 @@ $(function(){
 
 	$('#loading').hide();
 	
-$('.select').on('change',function(){
+$('.select').heapbox({'onChange':function(){
 	$('#loading').show();
 	$('header').addClass('header-shrink');
 	var $topStories = $('.topStories');
@@ -22,7 +22,7 @@ $('.select').on('change',function(){
 		var results = data.results.filter(function(value){ //filter the results for value
 			return value.multimedia.length >= 5; //we put 5 because in our each function it's 4, which 5th item in the array
 		});
-		results.splice(12); //we don't put equal because we want to update the current results variable 
+		results.splice(12); //we don't put equal because we want to update the current results variable
 
 		var articleImg ='';
 		var articleAbstract = '';
@@ -30,7 +30,6 @@ $('.select').on('change',function(){
 		
 		$.each (results, function(key, value){
 
-			// if(value.multimedia.length > 0) {
 			articleImg= value.multimedia[4].url;
 			articleAbstract=value.abstract;
 			articleUrl=value.url;
@@ -48,8 +47,8 @@ $('.select').on('change',function(){
 		.always(function(){
           $('#loading').hide();
     });
-
-	
+	}	
 	});
+	
 
 }); //closing tag for document ready
