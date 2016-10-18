@@ -84,7 +84,8 @@ header {
       justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  transition: height 1s; }
   @media (min-width: 600px) {
     header {
       -ms-flex-direction: row;
@@ -93,8 +94,8 @@ header {
           align-content: center; } }
   @media (min-width: 1000px) {
     header {
-      -ms-flex-line-pack: start;
-          align-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
       margin: 0 0; } }
 
 .logo {
@@ -111,8 +112,8 @@ header {
     margin: 0 auto 0 auto; }
   @media (min-width: 600px) {
     .logo {
-      -ms-flex: 1 1 20%;
-          flex: 1 1 20%; }
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%; }
       .logo img {
         width: 50%;
         height: auto; } }
@@ -139,11 +140,15 @@ header {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center;
-      max-width: auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-      -ms-flex-direction: row;
-          flex-direction: row; } }
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto; } }
+  @media (min-width: 1000px) {
+    .choose-section {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      -ms-flex-align: start;
+          align-items: flex-start; } }
   .choose-section p {
     text-align: center;
     width: 150px;
@@ -156,6 +161,15 @@ header {
 
 .header-shrink {
   height: auto; }
+  @media (min-width: 600px) {
+    .header-shrink {
+      height: 150px;
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
+  @media (min-width: 1000px) {
+    .header-shrink {
+      max-width: 50%;
+      height: 135px; } }
 
 #loading {
   width: 100%;
@@ -239,8 +253,7 @@ h1 {
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
-  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px); }
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px); }
 
 body {
   background-color: black;

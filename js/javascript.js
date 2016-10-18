@@ -3,7 +3,6 @@ $(function(){
 //when selection changes show me article
 
 	$('#loading').hide();
-	
 $('.select').heapbox({'onChange':function(){
 	$('#loading').show();
 	$('header').addClass('header-shrink');
@@ -30,7 +29,7 @@ $('.select').heapbox({'onChange':function(){
 		
 		$.each (results, function(key, value){
 
-			articleImg= value.multimedia[4].url;
+			articleImg=value.multimedia[4].url;
 			articleAbstract=value.abstract;
 			articleUrl=value.url;
 		
@@ -50,5 +49,12 @@ $('.select').heapbox({'onChange':function(){
 	}	
 	});
 	
+/*	this is to fade in the whole paragraph without cutting it off by css method
+	('li').hover(function(){
+    $('.article_abstract').fadeIn(); 
+	}, function() { 
+    $('.article_abstract').fadeOut(); 
+	});
+	}); */ //
 
 }); //closing tag for document ready
