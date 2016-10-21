@@ -84,7 +84,7 @@ header {
       justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding-bottom: 20px;
+  padding: 2rem;
   transition: height 1s; }
   @media (min-width: 600px) {
     header {
@@ -165,7 +165,7 @@ header {
   .choose-section p {
     text-align: center;
     width: 150px;
-    padding: 3% 0; }
+    margin-bottom: 1rem; }
     @media (min-width: 600px) {
       .choose-section p {
         text-align: left; } }
@@ -235,11 +235,12 @@ footer {
   text-align: center; }
   @media (min-width: 1000px) {
     footer {
-      text-align: left; } }
+      text-align: left;
+      padding: 0 2rem; } }
   footer p {
     color: #c2c2c2;
     padding: 3%;
-    font-size: .9rem; }
+    font-size: .8rem; }
     footer p span {
       text-transform: uppercase; }
 

@@ -84,7 +84,7 @@ header {
 	p {
 		text-align: center;
 		width: 150px;
-		padding: 3% 0;
+		margin-bottom: 1rem;
 
 		@include tablet {
 			text-align: left;
