@@ -10,6 +10,9 @@ var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),
     notify = require('gulp-notify');
 
+const imagemin = require('gulp-imagemin');
+
+
 var plumberErrorHandler={
     errorHandler: notify.onError({
       title: 'Gulp',
@@ -55,8 +58,15 @@ gulp.task('browserSync', function () {
     gulp.watch(['build/css/*.css', "build/js/*.js"]).on('change', browserSync.reload);
 });
 
-
 //
+
+
+
+gulp.task('default', function(){
+    gulp.src('src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
+});
 
 
 /**eslint*/
