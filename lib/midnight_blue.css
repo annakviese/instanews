@@ -36,7 +36,7 @@ height:35px;
 .heapBox .handler
 {
 width:25px;
-background:#2c3e50 url(../gfx/heapbox_handler_bg.jpg);
+background:#2c3e50 url(gfx/heapbox_handler_bg.jpg);
 height:35px;
 }
 
@@ -72,7 +72,7 @@ position:relative;
 display:block;
 width:100%;
 height:15px;
-background:#2c3e50 url(../gfx/slider_arrow_up.png);
+background:#2c3e50 url(gfx/slider_arrow_up.png);
 background-repeat:no-repeat;
 background-position:center center;
 border-bottom:1px solid #17212a;
@@ -86,7 +86,7 @@ z-index:30;
 display:block;
 width:100%;
 height:15px;
-background:#2c3e50 url(../gfx/slider_arrow_down.png);
+background:#2c3e50 url(gfx/slider_arrow_down.png);
 background-repeat:no-repeat;
 background-position:center center;
 border-top:1px solid #17212a;
