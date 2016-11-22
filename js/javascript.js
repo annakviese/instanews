@@ -13,7 +13,7 @@ $('.select').heapbox({'onChange':function(){
 
 	$.ajax({
 		method: 'GET',
-		url: 'http://api.nytimes.com/svc/topstories/v2/' +selectSection+ '.json?api-key=1fadf3cc3b294071815fd4c0acbdc944',
+		url: 'https://api.nytimes.com/svc/topstories/v2/' +selectSection+ '.json?api-key=1fadf3cc3b294071815fd4c0acbdc944',
 		})  
 
 	.done(function(data) {
