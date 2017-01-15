@@ -5,11 +5,13 @@ footer {
 
   	@include desktop {
   		text-align: left;
+  		padding: 0 2rem;
   	}
 
 	p {
 		color: #c2c2c2;
 		padding: 3%;
+		font-size: .8rem;
 		span {
 			text-transform: uppercase;
 		}
